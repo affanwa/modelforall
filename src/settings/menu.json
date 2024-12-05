@@ -1,5 +1,5 @@
 {
-  "siteTitle": "Website",
+  "siteTitle": "ModelForAll",
   "position": {
     "discriminant": "top",
     "value": {
@@ -17,9 +17,9 @@
     "subItemIndent": "10px"
   },
   "colors": {
-    "backgroundColor": "#9cacff87",
+    "backgroundColor": "#8f0622",
     "menuHoverColor": "#ffffff80",
-    "dropdownColor": "#0a0057ed",
+    "dropdownColor": "#ffffffed",
     "dropdownHoverColor": "#ffffff80"
   },
   "typography": {
@@ -29,7 +29,7 @@
       "fontStyle": "normal",
       "fontSize": "1.5rem",
       "lineHeight": 1,
-      "color": "#0a0057",
+      "color": "#ffffff",
       "marginTop": "0.5rem",
       "marginBottom": "0.5rem"
     },
@@ -39,7 +39,7 @@
       "fontStyle": "normal",
       "fontSize": "1rem",
       "lineHeight": 1,
-      "color": "#ffffff",
+      "color": "#800040",
       "marginTop": "4px",
       "marginBottom": "4px"
     },
@@ -49,7 +49,7 @@
       "fontStyle": "normal",
       "fontSize": "1.5rem",
       "lineHeight": 1,
-      "color": "#0a0057",
+      "color": "#ffffff",
       "marginTop": "4px",
       "marginBottom": "4px"
     }
