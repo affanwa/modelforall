@@ -144,16 +144,16 @@ declare module 'astro:content' {
 } & { render(): Render[".mdoc"] };
 };
 "pages": {
-"gallery.mdoc": {
-	id: "gallery.mdoc";
-  slug: "gallery";
+"Become a Model!.mdoc": {
+	id: "Become a Model!.mdoc";
+  slug: "become-a-model";
   body: string;
   collection: "pages";
   data: InferEntrySchema<"pages">
 } & { render(): Render[".mdoc"] };
-"hidden-page.mdoc": {
-	id: "hidden-page.mdoc";
-  slug: "hidden-page";
+"gallery.mdoc": {
+	id: "gallery.mdoc";
+  slug: "gallery";
   body: string;
   collection: "pages";
   data: InferEntrySchema<"pages">
