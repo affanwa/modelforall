@@ -2,6 +2,37 @@
 import { getCollection, getEntry } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 
+---
+import { getCollection, getEntry } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import ArrowNavigation from "../components/ArrowNavigation.astro";
+
+const { slug } = Astro.params;
+if (!slug) throw new Error("Slug not found");
+const page = await getEntry("pages", slug);
+
+if (!page) throw new Error("No page found for this slug");
+const { Content } = await page.render();
+
+// Generate static pages
+export async function getStaticPaths() {
+  const posts = await getCollection("pages");
+  return posts
+    .filter((post) => {
+      const isUnpublished = post.data.publishStatus === "unpublished";
+      return !isUnpublished;
+    })
+    .map((post) => ({ params: { slug: post.slug } }));
+}
+---
+
+<Layout title={page.data.title}>
+  {!page.data.hideTitle && <h1>{page.data.title}</h1>}
+  <Content />
+  <ArrowNavigation slug={slug} />
+</Layout>
+
+
 const { slug } = Astro.params;
 if (!slug) throw new Error("Slug not found");
 const page = await getEntry("pages", slug);

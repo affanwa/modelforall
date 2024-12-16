@@ -24,7 +24,7 @@
   },
   "typography": {
     "menuMain": {
-      "fontFamily": "fontStack1",
+      "fontFamily": "fontStack2",
       "fontWeight": "400",
       "fontStyle": "normal",
       "fontSize": "1.5rem",
@@ -34,9 +34,9 @@
       "marginBottom": "0.5rem"
     },
     "menuSub": {
-      "fontFamily": "fontStack1",
+      "fontFamily": "fontStack2",
       "fontWeight": "400",
-      "fontStyle": "normal",
+      "fontStyle": "italic",
       "fontSize": "1rem",
       "lineHeight": 1,
       "color": "#800040",
@@ -44,9 +44,9 @@
       "marginBottom": "4px"
     },
     "menuText": {
-      "fontFamily": "fontStack3",
+      "fontFamily": "fontStack2",
       "fontWeight": "400",
-      "fontStyle": "normal",
+      "fontStyle": "italic",
       "fontSize": "1.5rem",
       "lineHeight": 1,
       "color": "#ffffff",
