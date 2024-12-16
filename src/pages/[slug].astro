@@ -2,7 +2,7 @@
 import { getCollection, getEntry } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 
----
+
 import { getCollection, getEntry } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import ArrowNavigation from "../components/ArrowNavigation.astro";
@@ -24,7 +24,7 @@ export async function getStaticPaths() {
     })
     .map((post) => ({ params: { slug: post.slug } }));
 }
----
+
 
 <Layout title={page.data.title}>
   {!page.data.hideTitle && <h1>{page.data.title}</h1>}
